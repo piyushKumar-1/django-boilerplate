@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Django App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="p-5">
+      <div class="m-auto">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-5 h-50" id="j1j">
+              <div class="p-1">
+                <div class="border this rounded">
+                  <div class="p-3">
+                    <h4>Heading</h4>
+                    <p>Sample Start App with a <code>h1</code> tag above and this text in <code>p</code> tag</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-7 h-50" id="j2j">
+              <div class="p-1">
+                <div class="border this rounded">
+                  <div class="p-3">
+                    <h4>Heading</h4>
+                    <p>Sample Start App with a <code>h1</code> tag above and this text in <code>p</code> tag</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-8 h-50" id="j3j">
+              <div class="p-1">
+                <div class="border this rounded">
+                  <div class="p-3">
+                    <h4>Heading</h4>
+                    <p>Sample Start App with a <code>h1</code> tag above and this text in <code>p</code> tag</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 h-50" id="j4j">
+              <div class="p-1">
+                <div class="border this rounded">
+                  <div class="p-3">
+                    <h4>Heading</h4>
+                    <p>Sample Start App with a <code>h1</code> tag above and this text in <code>p</code> tag</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var i=0, j=0;
+      var colors = ['#f0fdff','#bf06','#ffa70066','#00ff8766','#2000ff66','#f006','#00cfffb0']
+
+      var divs = document.getElementsByClassName("this");
+      function change(){
+        divs[i].style.background = colors[j];
+        j++;
+        i++;
+        if(i==divs.length){
+          i=0;
+        }
+        if(j==5){
+          j=0;
+        }
+      }
+      setInterval(change, 1000);
+    </script>
+  </body>
+</html>
